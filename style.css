@@ -1,0 +1,282 @@
+section {
+    margin: 25px auto;
+    padding: 35px;
+    width: 92%;
+    max-width: 1200px;
+
+    background: rgba(5, 8, 22, 0.65);
+    border: 1px solid rgba(130, 70, 255, 0.4);
+    border-radius: 18px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+
+    transition: 0.4s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    border-color: #a855f7;
+    box-shadow: 0 10px 30px rgba(140, 50, 255, 0.3);
+}
+
+section h2 {
+    color: #bd8aff;
+}
+
+header {
+    background: rgba(5, 5, 15, 0.9);
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #7135b5;
+}
+
+header h1 {
+    color: white;
+    text-shadow: 0 0 12px #873cff;
+}
+
+nav {
+    background: rgba(8, 8, 25, 0.95);
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c18aff;
+    text-shadow: 0 0 15px #a855f7;
+    transform: translateY(-4px);
+}
+
+
+body {
+    min-height: 100vh;
+    color: white;
+
+    background: linear-gradient(
+        -45deg,
+        #03040a,
+        #080d1c,
+        #101e3d,
+        #301052,
+        #641b86,
+        #07518a,
+        #03040a
+    );
+
+    background-size: 400% 400%;
+    animation: gradientBergerak 12s ease infinite;
+}
+
+@keyframes gradientBergerak {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+/* LOGO PROFIL */
+.logo-profil {
+    text-align: center;
+    padding: 30px 15px 10px;
+    animation: munculAtas 1s ease;
+}
+
+.logo-profil img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 15px #a855f7);
+}
+
+/* KOTAK PROFIL */
+.profil-container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 35px;
+
+    background: rgba(12, 8, 30, 0.85);
+
+    border: 1px solid rgba(150, 80, 255, 0.4);
+    border-radius: 18px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+
+    animation: munculBawah 1s ease;
+}
+
+/* JUDUL PROFIL */
+.profil-container h2 {
+    color: #bd8aff;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+/* ISI PROFIL */
+.profil-container p,
+.profil-container li {
+    color: white;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* TOMBOL KEMBALI */
+.kembali {
+    text-align: center;
+    margin: 35px;
+}
+
+.kembali a {
+    display: inline-block;
+    padding: 13px 25px;
+
+    background: linear-gradient(
+        90deg,
+        #174caa,
+        #8129c9
+    );
+
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.kembali a:hover {
+    box-shadow: 0 0 20px #a855f7;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .profil-container {
+        padding: 22px;
+    }
+
+    .logo-profil img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* HEADER SEKOLAH */
+.header-sekolah {
+    text-align: center;
+    padding: 35px 20px;
+    background: #0b0718;
+    color: white;
+}
+
+/* JUDUL SEKOLAH */
+.header-sekolah h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 0 8px purple;
+}
+
+/* SLOGAN SEKOLAH */
+.header-sekolah p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* POSISI LOGO DI TENGAH */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* UKURAN LOGO */
+.logo-container img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* GALERI KEGIATAN SEKOLAH */
+
+#galeri {
+    padding: 40px 25px;
+    text-align: center;
+}
+
+#galeri h2 {
+    color: #c084fc;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.galeri-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.galeri-item {
+    background: #100c25;
+    border: 1px solid #6236a0;
+    border-radius: 15px;
+    padding: 15px;
+    width: 450px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* GALERI KEGIATAN */
+
+#galeri {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#galeri h2 {
+    color: #c084fc;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.galeri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeri img {
+    width: 70%;
+    max-width: 650px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #6236a0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
